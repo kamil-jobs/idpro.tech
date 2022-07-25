@@ -1,0 +1,35 @@
+.btn, a.btn{
+    cursor: pointer;
+    color: #fff;
+    transition: all 0.5s ease;
+    display: inline-block;
+    height: 40px;
+    line-height: 40px;
+    border-radius: 8px;
+    background-color: #FF453A;
+    padding-left: 16px;
+    padding-right: 16px;
+}
+
+.btn:hover{
+    color: #FF453A;
+    background-color: #fff;
+    opacity: 1;
+}
+
+.btn-big, a.btn-big{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.5s ease;
+    height: 64px;
+    line-height: 32px;
+    font-size: 24px;
+    width: 100%;
+}
+
+.btn-big:hover, a.btn-big:hover{
+    background-color: #FF453A;
+    color: #fff;
+    opacity: 0.8;
+}

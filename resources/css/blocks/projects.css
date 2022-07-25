@@ -1,0 +1,125 @@
+.projects {
+    padding-top: 32px;
+    padding-bottom: 64px;
+}
+
+.container {}
+
+.projects-title {
+    font-size: 64px;
+    font-weight: 700;
+    line-height: 72px;
+    padding-bottom: 32px;
+    ;
+}
+
+.projects-grid-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, 544px);
+    column-gap: 32px;
+    row-gap: 32px;
+    justify-content: center;
+}
+
+.projects_grid-container__box {}
+
+.projects-box {
+    position: relative;
+    max-width: 544px;
+    height: 448px;
+
+}
+
+
+.projects-box__description {
+    position: absolute;
+    bottom: 24px;
+    left: 72px;
+    display: flex;
+    justify-content: space-between;
+    max-width: 400px;
+    color: #fff;
+}
+
+.projects-box__bg-description {
+    position: absolute;
+    z-index: -1;
+    bottom: 0;
+    left: 0;
+    border-radius: 8px;
+    width: 100%;
+    height: 100px;
+    background: linear-gradient(rgba(36, 36, 36, 0.8), rgba(0, 0, 0, 0.8));
+}
+
+.projects-box__text {}
+
+.projects-box__logo {
+    width: 30px;
+    height: 40px;
+}
+
+.projects-box__bg-img {
+    position: absolute;
+    z-index: -2;
+    top: 0;
+    left: 0;
+    border-radius: 8px;
+}
+
+.projectss-btn-container {
+    padding-top: 32px;
+}
+
+
+
+@media(max-width:544px) {
+    .projects {
+        padding-top: 16px;
+        padding-bottom: 16px;
+    }
+
+    .projects-grid-container {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, 256px);
+        column-gap: 12px;
+        row-gap: 12px;
+    }
+
+    .projects-title {
+        font-size: 32px;
+        padding-bottom: 16px;
+        
+    }
+
+    .projects-box {
+        max-width: 256px;
+        height: 256px;
+    }
+
+    .projects-box__description {
+        bottom: 16px;
+        left: 16px;
+        width: 224px;
+    }
+
+    .projects-box__text {
+        font-size: 11px;
+        max-width: 160px;
+    }
+
+    .projects-box__logo {
+        width: 18px;
+        height: 24px;
+    }
+
+    .projects-box__bg-description {
+        bottom: 0;
+        height: 55px;
+    }
+
+    .projects-box__bg-img {
+        height: 100%;
+    }
+
+}

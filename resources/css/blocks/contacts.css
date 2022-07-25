@@ -1,0 +1,158 @@
+.contacts{
+
+}
+
+.contacts-row {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding-top: 32px;
+    padding-top: 64px;
+}
+
+.container {
+}
+.contacts-text {
+    max-width: 544px;
+}
+.contacts-text__title {
+    font-size: 64px;
+    font-weight: 700;
+    line-height: 72px;
+    padding-bottom: 32px;
+}
+
+.contacts-text__address {
+    
+}
+.address {
+}
+.address__title {
+    font-size: 48px;
+    font-weight: 700;
+    line-height: 64px;
+    padding-bottom: 8px;
+}
+.address__info {
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 24px;
+}
+.contacts-text__contact-data {
+
+}
+.contact-data {
+}
+.contact-data__title {
+    font-size: 48px;
+    font-weight: 700;
+    line-height: 64px;
+    padding-top: 16px;
+    padding-bottom: 12px;
+}
+.contact-data__tel {
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 24px;
+}
+.contact-data__mail {
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 24px;
+}
+
+.contacts-btn-container{
+    padding-top: 64px;
+    padding-bottom: 64px;
+}
+
+.btn-big-gray, a.btn-big-grey {
+    background-color: #DBDDDF;
+    color: #000;
+}
+
+.contscts-map{
+    width: 544px;
+}
+
+.contacts-map iframe {
+    max-width: 544px;
+    max-height: 360px;
+}
+
+.contacts-btn-container-mobile{
+    display: none;
+}
+
+@media(max-width:1065px)
+{
+    .address__title,.contact-data__title {
+        font-size: 34px;
+
+    }
+}
+
+@media(max-width:950px){
+    .contacts-row{
+        flex-direction: column;
+        padding-top: 32px;
+    }
+
+    .contacts-btn-container-desktop{
+        display: none;
+    }
+    .contacts-btn-container-mobile{
+        display: inherit;
+        max-width: 544px;
+    }
+
+    .contacts-btn-container{
+        max-width: 544px;
+    }
+}
+
+@media(max-width:922px){
+    .contacts-row{
+        padding-top: 16px;
+    }
+
+    .contacts-text__title {
+        padding-bottom: 16px;
+    }
+    .address__title, .contact-data__title {
+        font-size: 24px;
+        font-weight: 700;
+        line-height: 24px;
+        padding-bottom: 8px;
+    }
+    .address__info,.contact-data__tel,.contact-data__mail {
+        font-size: 16px;
+        font-weight: 500;
+        line-height: 18px;
+    }
+
+    .contacts-btn-container {
+        padding-top: 16px;
+        padding-bottom: 32px;
+    }
+    .contacts-map iframe{
+        padding: 12px 0 16px 0;
+    }
+     
+}
+
+
+
+@media(max-width:575px){
+    
+    .contacts-text__title{
+        font-size: 32px;
+        font-weight: 700;
+        line-height: 48px;
+    }
+    .contacts-map iframe{
+        width:100%;    
+        height: 300px;
+        padding: 12px 0 16px 0;
+    }
+}
